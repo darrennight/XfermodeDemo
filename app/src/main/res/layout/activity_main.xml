@@ -1,15 +1,22 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:circle = "http://schemas.android.com/apk/res-auto"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:circle="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
 
-    <com.jacob.xfermode.CustomImageView
+    <com.jacob.xfermode.CircleImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
-        circle:border_color="#ff27b0ff"
-        circle:border_width="2dp"
         android:padding="2dp"
-        android:src="@mipmap/ic_logo"/>
+        android:src="@mipmap/ic_logo"
+        circle:border_color="#ff27b0ff"
+        circle:border_width="2dp"/>
 
-</RelativeLayout>
+    <com.jacob.xfermode.CircleImageViewWithShader
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:src="@mipmap/ic_bg"/>
+
+</LinearLayout>

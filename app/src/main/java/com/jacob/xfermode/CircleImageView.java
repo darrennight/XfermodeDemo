@@ -20,7 +20,7 @@ import android.widget.ImageView;
  * Date : 15-3-2
  * Description : 这个类是用来xxx
  */
-public class CustomImageView extends ImageView {
+public class CircleImageView extends ImageView {
 
     private int mBorderWidth = dp2Px(1);
     private int mBorderColor = 0xffffff;
@@ -31,19 +31,19 @@ public class CustomImageView extends ImageView {
     private int width;
     private int height;
 
-    public CustomImageView(Context context) {
+    public CircleImageView(Context context) {
         super(context);
     }
 
-    public CustomImageView(Context context, AttributeSet attrs) {
+    public CircleImageView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public CustomImageView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public CircleImageView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.CustomImageView);
-        mBorderColor = typedArray.getColor(R.styleable.CustomImageView_border_color, 0xffffff);
-        mBorderWidth = (int) typedArray.getDimension(R.styleable.CustomImageView_border_width, dp2Px(1));
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.CircleImageView);
+        mBorderColor = typedArray.getColor(R.styleable.CircleImageView_border_color, 0xffffff);
+        mBorderWidth = (int) typedArray.getDimension(R.styleable.CircleImageView_border_width, dp2Px(1));
         typedArray.recycle();
 
     }
